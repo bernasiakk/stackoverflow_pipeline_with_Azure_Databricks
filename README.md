@@ -56,7 +56,7 @@ The pipeline consists of the following main tasks:
    3. clean html columns (about_me, text, body, etc.) and limit them to 255 characters
 3. **Silver to Gold**: tables of the same kind (./genai/badges <-> ./health/badges, ./genai/comments <-> ./posts/comments, etc.) are merged and written as one. 
 
-❗ Before running the above pipeline, make sure to run **mount storage** notebook. This notebook mounts *Azure Storage* to *Databricks tmp* folder. That makes it more efficient to work with and write data.
+❗ When creating this project, I used _mounting_ in my notebooks. Later I learned that _.cache()_ is a more efficient option on most levels. I encourage you to try _.cache()_
 
 ### Synapse Analytics Pipeline
 
