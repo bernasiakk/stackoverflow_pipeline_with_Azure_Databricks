@@ -113,8 +113,6 @@ Common actions for both storage accounts:
   
 **Azure Synapse Analytics**
 1. Create Synapse Analytics
-2. #TODO
-
 
 
 ### Power BI
@@ -124,7 +122,7 @@ Common actions for both storage accounts:
 
 
 
-## Usage #TODO
+## Usage
 
 1. **Run ETL Pipeline**: Trigger the pipeline in Azure Data Factory to start the data migration process.
 2. **Monitor**: Use ADF monitoring tools to track the progress and troubleshoot any issues.
