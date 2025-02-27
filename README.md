@@ -56,8 +56,6 @@ The pipeline consists of the following main tasks:
    3. clean html columns (about_me, text, body, etc.) and limit them to 255 characters
 3. **Silver to Gold**: tables of the same kind (./genai/badges <-> ./health/badges, ./genai/comments <-> ./posts/comments, etc.) are merged and written as one. 
 
-❗ When creating this project, I used _mounting_ in my notebooks. Later I learned that _.cache()_ is a more efficient option on most levels. I encourage you to try _.cache()_
-
 ### Synapse Analytics Pipeline
 
 <img src="images/synapse_pipeline.png" alt="drawing" width="700"/>
@@ -133,6 +131,6 @@ Common actions for both storage accounts:
 - **Data Encryption**: All data is encrypted in transit and at rest.
 - **Access Controls**: Access to resources is managed using Azure Role-Based Access Control (RBAC) and Key Vault secrets.
 
-
-## Contact
-For any questions or inquiries, please contact me at bernasiakk@gmail.com
+## Future improvements
+1. Do not process previously processed stacks (i.e., if you already ran 'beer' archive, don't process it further. This improvement assumes that data in the archives doesn't change)
+2. Improve parallellism of your ETL pipeline (so the `silver` notebook transforms multiple files instead of one-by-one)
