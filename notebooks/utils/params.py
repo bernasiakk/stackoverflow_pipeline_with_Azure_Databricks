@@ -11,3 +11,5 @@ URL_LIST = ['beer', 'vegetarianism']
 STORAGE_ACCOUNT = 'stackoverflowstorage'
 APPLICATION_ID = 'fff8eed9-4e4a-41ad-be4c-ba560a8698bb' # get it from app registration
 DIRECTORY_ID = '49c2075d-fa21-4c06-b6b9-6802bf10b0bb' # get it from app registration
+
+#test
